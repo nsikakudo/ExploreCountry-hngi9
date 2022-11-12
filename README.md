@@ -21,7 +21,7 @@ The project leverages the following components and libraries :
 *  ViewModel - UI related data holder, lifecycle aware.
 
 ##  Features to add if time permits
-* Setting up the dark screen demo interface.
+* Setting up the button to switch between the dark and light screen interface.
 * Completing the Filter Layout.
 
 
@@ -33,6 +33,7 @@ You can try out the application on your device through the link below;
 ## Challenges 
 *  Setting up the Dark and Light Theme using Material Theme. 
 *  I was also face with the challenge of creating an interactive filter layout.
+*  Time was also a constraint as to why the efficiency of the app may not be fully maximise.
 
 ## Application Demo
 Check out the demo app on Appetize.io

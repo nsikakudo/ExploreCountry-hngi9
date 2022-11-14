@@ -35,7 +35,7 @@ The project leverages the following components and libraries :
 ## Download Application
 
 You can try out the application on your device through the link below;
-*  [Apk link]()
+*  [Apk link](https://appetize.io/app/cq2omvbhodu4alolubwey6whj4?device=pixel4&osVersion=11.0&scale=75)
 
 ## Challenges 
 *  Setting up the Dark and Light Theme using Material Theme. 
@@ -43,7 +43,7 @@ You can try out the application on your device through the link below;
 
 ## Application Demo
 Check out the demo app on Appetize.io
-*  [Demo link]()
+*  [Demo link](https://appetize.io/app/cq2omvbhodu4alolubwey6whj4?device=pixel4&osVersion=11.0&scale=75)
 
 ## More Details
 You need the following requirements to run this project

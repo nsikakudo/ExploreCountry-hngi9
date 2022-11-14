@@ -39,7 +39,7 @@ You can try out the application on your device through the link below;
 
 ## Challenges 
 *  Setting up the Dark and Light Theme using Material Theme. 
-*  I was also face with the challenge of creating an interactive filter layout.
+*  I was also face with the challenge of creating an interactive filter layout, which i was able to resolve after some time.
 
 ## Application Demo
 Check out the demo app on Appetize.io

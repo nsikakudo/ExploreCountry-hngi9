@@ -5,7 +5,7 @@ The Explore country app is an application that shows the number of countries in 
 
 ## App Architectural Features
 
-In this project, I applied some application architectural principles in order to create a roadmap and best practicies to in follow so as to create a well structured and interactive application.
+In this project, I applied some application architectural principles in order to create a roadmap and best practicies to in follow so as to create a well structured and interactive application. I also used a combination of XML and Jetpack Compose for this project.
 
 *  I developed data models to store the information that would be shown on the user interface(UI).
 *  I also created a domain package, which houses the app's data models.
@@ -40,7 +40,6 @@ You can try out the application on your device through the link below;
 ## Challenges 
 *  Setting up the Dark and Light Theme using Material Theme. 
 *  I was also face with the challenge of creating an interactive filter layout.
-*  Time was also a constraint as to why the efficiency of the app may not be fully maximise.
 
 ## Application Demo
 Check out the demo app on Appetize.io

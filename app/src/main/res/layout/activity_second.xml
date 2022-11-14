@@ -58,25 +58,24 @@
                 android:text="@string/population"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:layout_marginBottom="15dp"
                 android:layout_marginStart="30dp"
-                android:layout_marginEnd="15dp"/>
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"/>
 
             <TextView
                 android:id="@+id/tv_population_value"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
-                android:layout_marginBottom="15dp"
                 android:text=""
                 android:textSize="20dp"
-                android:textStyle="bold" />
+                android:layout_marginBottom="10dp"/>
+
         </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         >
 
         <TextView
@@ -86,25 +85,24 @@
             android:text="@string/region"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:layout_marginBottom="15dp"
             android:layout_marginStart="30dp"
-            android:layout_marginEnd="15dp"/>
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"/>
 
         <TextView
             android:id="@+id/tv_region_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="0dp"
-            android:layout_marginBottom="15dp"
             android:text=""
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="10dp"/>
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         >
 
         <TextView
@@ -114,19 +112,19 @@
             android:text="@string/capital"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:layout_marginBottom="15dp"
             android:layout_marginStart="30dp"
-            android:layout_marginEnd="15dp"/>
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"/>
 
         <TextView
             android:id="@+id/tv_capital_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="0dp"
-            android:layout_marginBottom="15dp"
             android:text=""
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="10dp"
+        />
     </LinearLayout>
 
 
@@ -143,25 +141,23 @@
             android:text="@string/official_language"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:layout_marginBottom="15dp"
             android:layout_marginStart="30dp"
-            android:layout_marginEnd="15dp"/>
+            android:layout_marginEnd="10dp"/>
 
         <TextView
             android:id="@+id/tv_official_lang_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="0dp"
-            android:layout_marginBottom="15dp"
             android:text=""
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="10dp"/>
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         >
 
         <TextView
@@ -171,25 +167,23 @@
             android:text="@string/demonym"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:layout_marginBottom="15dp"
             android:layout_marginStart="30dp"
-            android:layout_marginEnd="15dp"/>
+            android:layout_marginEnd="10dp"/>
 
         <TextView
             android:id="@+id/tv_demonym_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="0dp"
-            android:layout_marginBottom="15dp"
             android:text=""
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="10dp"/>
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         >
 
         <TextView
@@ -199,19 +193,19 @@
             android:text="@string/un_member"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:layout_marginBottom="15dp"
             android:layout_marginStart="30dp"
-            android:layout_marginEnd="15dp"/>
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"/>
 
         <TextView
             android:id="@+id/tv_un_member_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="0dp"
-            android:layout_marginBottom="15dp"
             android:text=""
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="10dp"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -227,25 +221,24 @@
             android:text="@string/independent"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:layout_marginBottom="15dp"
             android:layout_marginStart="30dp"
-            android:layout_marginEnd="15dp"/>
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"/>
 
         <TextView
             android:id="@+id/tv_independent_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="0dp"
-            android:layout_marginBottom="15dp"
             android:text=""
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="10dp"/>
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         >
 
         <TextView
@@ -255,25 +248,24 @@
             android:text="@string/area"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:layout_marginBottom="15dp"
             android:layout_marginStart="30dp"
-            android:layout_marginEnd="15dp"/>
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"/>
 
         <TextView
             android:id="@+id/tv_area_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="0dp"
-            android:layout_marginBottom="15dp"
             android:text=""
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="10dp"/>
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         >
 
         <TextView
@@ -283,23 +275,20 @@
             android:text="@string/currency"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="10dp"
             android:layout_marginStart="30dp"
-            android:layout_marginEnd="15dp"/>
+            android:layout_marginEnd="10dp"/>
 
         <TextView
             android:id="@+id/tv_currency_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="0dp"
-            android:layout_marginBottom="15dp"
             android:text=""
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="10dp"/>
 
     </LinearLayout>
-
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -314,19 +303,19 @@
             android:text="@string/time_zone"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:layout_marginBottom="15dp"
             android:layout_marginStart="30dp"
-            android:layout_marginEnd="15dp"/>
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"/>
 
         <TextView
             android:id="@+id/tv_time_zone_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="0dp"
-            android:layout_marginBottom="15dp"
             android:text=""
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="10dp"/>
+
     </LinearLayout>
 
 
@@ -334,7 +323,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         >
 
         <TextView
@@ -344,26 +332,25 @@
             android:text="@string/driving_side"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="10dp"
             android:layout_marginStart="30dp"
-            android:layout_marginEnd="15dp"/>
+            android:layout_marginEnd="10dp"/>
 
         <TextView
             android:id="@+id/tv_driving_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="0dp"
-            android:layout_marginBottom="15dp"
             android:text=""
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="10dp"/>
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="20dp"
         >
 
         <TextView
@@ -373,19 +360,19 @@
             android:text="@string/geographical_location"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="10dp"
             android:layout_marginStart="30dp"
-            android:layout_marginEnd="15dp"/>
+            android:layout_marginEnd="10dp"/>
 
         <TextView
             android:id="@+id/tv_geographical_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="0dp"
-            android:layout_marginBottom="15dp"
             android:text=""
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="10dp"/>
+
     </LinearLayout>
 
     </LinearLayout>

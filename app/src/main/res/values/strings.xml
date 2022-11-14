@@ -23,4 +23,34 @@
     <string name="dialing_code">Dialling code:</string>
     <string name="geographical_location">Geographical location:</string>
     <string name="driving_side">Driving side:</string>
+    <string name="language">Language</string>
+    <string name="continent">Continent</string>
+    <string name="africa">Africa</string>
+    <string name="antarctica">Antarctica</string>
+    <string name="asia">Asia</string>
+    <string name="australia">Australia</string>
+    <string name="europe">Europe</string>
+    <string name="north_america">North America</string>
+    <string name="south_america">South America</string>
+    <string name="time_zone1">GMT+1:00</string>
+    <string name="time_zone2">GMT+2:00</string>
+    <string name="time_zone3">GMT+3:00</string>
+    <string name="time_zone4">GMT+4:00</string>
+    <string name="time_zone5">GMT+5:00</string>
+    <string name="reset">Reset</string>
+    <string name="show_results">Show results</string>
+    <string name="english">English</string>
+    <string name="italiano">Italiano</string>
+    <string name="deutsch">Deutsch</string>
+    <string name="spanish">Spanish</string>
+    <string name="svenska">Svenska</string>
+    <string name="portuguese">Portuguese</string>
+    <string name="french">French</string>
+    <string name="arabic">Arabic</string>
+    <string name="kazakh">Kazakh</string>
+    <string name="guarani">Guarani</string>
+    <string name="mandarin">Mandarin</string>
+    <string name="russian">Russian</string>
+    <string name="hindi">Hindi</string>
+
 </resources>

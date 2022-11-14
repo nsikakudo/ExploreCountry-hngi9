@@ -4,7 +4,15 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.TextView
+import android.view.View
+import android.widget.Button
+import android.widget.CheckBox
+import android.widget.EditText
+import android.widget.ImageButton
+import android.widget.RadioButton
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.widget.doOnTextChanged
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import eu.cryptoapp.explorecountry.R
 import eu.cryptoapp.explorecountry.data.ApiInterface
 import eu.cryptoapp.explorecountry.models.Country
@@ -29,7 +37,92 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         listView = findViewById<MyComposeListView>(R.id.listView)
         getMyData()
+
+
+        val btnSwitch : ImageButton = findViewById(R.id.btn_switch)
+
+        var isChecked = false
+
+//        btnSwitch.setOnClickListener {
+//            isChecked = !isChecked
+//            if (isChecked) {
+//                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+//            } else {
+//                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+//            }
+//        }
+
+
+
+
+        val btnFilter : Button = findViewById(R.id.filter_btn)
+
+        btnFilter.setOnClickListener {
+            val view : View = layoutInflater.inflate(R.layout.activity_filter, null)
+            val dialog = BottomSheetDialog(this)
+            dialog.setContentView(view)
+            dialog.show()
+
+            view.findViewById<ImageButton>(R.id.btn_return).setOnClickListener {
+                dialog.dismiss()
+            }
+
+            view.findViewById<ImageButton>(R.id.continent_dropdown).setOnClickListener {
+                val view : View = layoutInflater.inflate(R.layout.activity_filter_selection, null)
+                val dialog = BottomSheetDialog(this)
+                dialog.setContentView(view)
+                dialog.show()
+
+                view.findViewById<ImageButton>(R.id.btn_exit2).setOnClickListener {
+                    dialog.dismiss()
+                }
+            }
+
+           view.findViewById<ImageButton>(R.id.timezone_dropdown2).setOnClickListener {
+               val view : View = layoutInflater.inflate(R.layout.activity_filter_selection, null)
+               val dialog = BottomSheetDialog(this)
+               dialog.setContentView(view)
+               dialog.show()
+           }
+        }
+
+
+        val preferredLanguage : Button = findViewById(R.id.preferred_lang)
+
+        preferredLanguage.setOnClickListener {
+            val view : View = layoutInflater.inflate(R.layout.preferred_language_activity_filter, null)
+            val dialog = BottomSheetDialog(this)
+            dialog.setContentView(view)
+            dialog.show()
+
+            view.findViewById<ImageButton>(R.id.btn_exit).setOnClickListener {
+                dialog.dismiss()
+            }
+
+
+        }
+
+
+
+        val searchCountry : EditText = findViewById(R.id.search_country)
+
+        searchCountry.doOnTextChanged { text, start, before, count ->
+            filter(text?.toString() ?: "")
+        }
     }
+
+    fun onRadioButtonClicked(view: View){
+        if (view is RadioButton){
+            val checked = view.isChecked
+        }
+    }
+
+    fun onCheckboxClicked(view: View){
+        if (view is CheckBox) {
+            val checked: Boolean = view.isChecked
+        }
+    }
+
 
     private fun getMyData() {
         val okHttpClient = OkHttpClient.Builder()
@@ -85,7 +178,7 @@ class MainActivity : AppCompatActivity() {
             listView.countries.value = fullList
             return
         }
-        val updatedList = fullList.filter { it.name.common.contains(query) }
+        val updatedList = fullList.filter { it.name.common.contains(query, true) }
         listView.countries.value = updatedList
     }
 }

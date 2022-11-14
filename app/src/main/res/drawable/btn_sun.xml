@@ -3,5 +3,5 @@
 
     <item android:drawable="@drawable/img_sun"
         android:width="25dip"
-        android:height="25dip"/>
+        android:height="20dip"/>
 </layer-list>

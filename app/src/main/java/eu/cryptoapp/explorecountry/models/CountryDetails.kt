@@ -7,13 +7,13 @@ import kotlinx.android.parcel.Parcelize
 data class CountryDetails(
     val population: Int,
     val region: String,
-    val capital: List<String>?,
-    val languages: Demonyms,// Official language
+    val capital: String?,
+    val languages: String,// Official language
     val demonyms: String,
     val unMembers: Boolean,
     val independent: Boolean,
     val area: Double,
-    val currencies: String,
+    val currency: String? = null,
     val timezones: List<String>,
     val latlng: List<Double>, //Geographical location
     val car: String,
@@ -27,13 +27,14 @@ data class CountryDetails(
             return CountryDetails(
                 population = country.population,
                 region = country.region,
-                capital = country.capital,
-                languages = country.demonyms,
+                capital = country.capital?.firstOrNull() ?: "",
+                languages = country.languages.values.firstOrNull() ?: "",
                 demonyms = country.demonyms.eng.m,
                 unMembers = country.unMember,
                 independent = country.independent,
                 area = country.area,
-                currencies = country.currencies.MRU?.name ?: "",
+                currency = country.currencies.values?.joinToString(",") { it.name } ?: "",
+//                currency = country.currencies.MRU?.name?: "",
                 timezones = country.timezones,
                 latlng = country.latlng,
                 car = country.car.side,

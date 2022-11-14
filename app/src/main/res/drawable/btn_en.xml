@@ -3,5 +3,6 @@
 
     <item android:drawable="@drawable/img_web"
         android:width="22dip"
-        android:height="20dip"/>
+        android:height="20dip" />
+
 </layer-list>

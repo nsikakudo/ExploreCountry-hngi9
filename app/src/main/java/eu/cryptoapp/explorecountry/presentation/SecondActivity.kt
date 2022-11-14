@@ -3,9 +3,12 @@ package eu.cryptoapp.explorecountry.presentation
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.TextWatcher
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.widget.doOnTextChanged
 import coil.Coil
 import coil.load
 import com.bumptech.glide.Glide
@@ -46,14 +49,13 @@ class SecondActivity : AppCompatActivity() {
         tvUnMember.text = details?.unMembers.toString()
         tvArea.text = details?.area.toString()
         tvIndependent.text = details?.independent.toString()
-        tvCurrency.text = details?.currencies.toString()
+        tvCurrency.text = details?.currency.toString()
         tvTimeZone.text = details?.timezones.toString()
         tvDrivingSide.text = details?.car.toString()
         tvLocation.text = details?.latlng.toString()
 
 
         pR.imageUrls.value = listOf(
-
             details?.flags ?: "",
             details?.coatOfArms ?: "", //update to coat of arms
            //Update to the other thing

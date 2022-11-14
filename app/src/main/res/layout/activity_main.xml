@@ -9,27 +9,28 @@
 
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="10dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="25dp"
         android:orientation="horizontal">
 
+
         <TextView
-            android:layout_width="120dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/explore"
             android:textColor="@color/black"
-            android:textSize="30sp"
+            android:textSize="27sp"
             android:gravity="left"
             android:textStyle="bold"
             android:fontFamily="@font/elsie_swash_caps_black"
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:layout_width="5dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="end"
             android:text="@string/dot"
@@ -38,28 +39,31 @@
             android:textStyle="bold" />
 
         <ImageButton
-            android:layout_width="30dip"
-            android:layout_height="30dip"
+            android:id="@+id/btn_switch"
+            android:layout_width="26dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="160dp"
-            android:layout_marginEnd="20dp"
             android:layout_marginTop="10dp"
-            android:contentDescription="sun_image"
-            android:background="@drawable/moon_img" />
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/btn_sun"
+            android:backgroundTint="@color/white"
+            android:contentDescription="sun_image" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:orientation="horizontal"
         android:background="@drawable/btn_bg">
 
         <ImageButton
-            android:layout_width="25dip"
-            android:layout_height="25dip"
+            android:layout_width="22dip"
+            android:layout_height="22dip"
             android:layout_marginStart="15dp"
             android:contentDescription="search_image"
             android:layout_marginTop="10dp"
@@ -67,9 +71,9 @@
 
 
         <EditText
+            android:id="@+id/search_country"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginStart="0dp"
             android:layout_marginEnd="25dp"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
@@ -82,37 +86,38 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="30dp"
         android:orientation="horizontal">
 
 
         <Button
-            android:layout_width="90dp"
+            android:id="@+id/preferred_lang"
+            android:layout_width="60dp"
             android:layout_height="50dp"
             android:text="@string/en"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="12sp"
             android:backgroundTint="@color/white"
-            android:background="@drawable/img_web"
+            android:drawableLeft="@drawable/btn_en"
             style="?android:attr/buttonBarButtonStyle" />
 
         <Button
-            android:layout_width="120dp"
+            android:id="@+id/filter_btn"
+            android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="130dp"
+            android:layout_marginStart="150dp"
             android:layout_marginEnd="0dp"
             android:text="@string/filter"
             android:textColor="@color/black"
-            android:textSize="15sp"
-            android:drawableStart="@drawable/btn_filter"
+            android:textSize="12sp"
+            android:drawableLeft="@drawable/btn_filter"
             android:backgroundTint="@color/white"
             style="?android:attr/buttonBarButtonStyle" />
 
     </LinearLayout>
-
 
     <eu.cryptoapp.explorecountry.presentation.MyComposeListView
         android:id="@+id/listView"

@@ -13,6 +13,13 @@ In this project, I applied some application architectural principles in order to
 * I also constructed the UI package, which houses all UI components and screens.
 <p>The project was designed in a way to make it easier to introduce new features in the event that they are added.</p>
 
+## Application Design
+
+For this project a Figma design was provide to aid ease the job.
+
+*  [Design](https://www.figma.com/proto/v9AXj4VZNnx26fTthrPbhX/Explore?node-id=33%3A1390&scaling=scale-down&page-id=0%3A1&starting-point-node-id=33%3A1390&show-proto-sidebar=1)
+
+
 ##  App Libraries
 
 The project leverages the following components and libraries :
@@ -22,7 +29,7 @@ The project leverages the following components and libraries :
 
 ##  Features to add if time permits
 * Setting up the button to switch between the dark and light screen interface.
-* Completing the Filter Layout.
+* A live location map that shows all the continents and its tourist center.
 
 
 ## Download Application
